@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/bg_bottom_nav_view.xml" value="0.1385" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/bg_edit_text.xml" value="0.1385" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/bg_fab.xml" value="0.1385" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/bg_login_and_registration_button.xml" value="0.1385" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/bg_login_btn.xml" value="0.1385" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/bg_login_btn1.xml" value="0.1385" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/bg_splash.xml" value="0.1385" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/botton_nav_bar_selector.xml" value="0.1385" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/et_cursor.xml" value="0.1385" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/ic_bg_image.xml" value="0.1385" />
-        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_login.xml" value="0.2" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_registration.xml" value="0.22" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

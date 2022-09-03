@@ -26,6 +26,11 @@
         <item name="android:windowBackground">@drawable/bg_splash</item>
     </style>
 
+    <style name="BottomAppBar" parent="Widget.MaterialComponents.BottomAppBar">
+        <item name="cornerRadius">27dp</item>
+        <item name="background">@drawable/bg_bottom_nav_view</item>
+    </style>
+
     <style name="TextH1">
         <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/circe_extra_bold</item>
@@ -62,5 +67,8 @@
         <item name="android:lines">1</item>
         <item name="android:textCursorDrawable">@drawable/et_cursor</item>
         <item name="android:theme">@style/TextH3</item>
+    </style>
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
     </style>
 </resources>

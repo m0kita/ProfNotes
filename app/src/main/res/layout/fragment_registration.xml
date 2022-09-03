@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:padding="20dp"
     android:scrollbars="none"
     tools:context=".ui.login.LoginFragment">
 
@@ -103,14 +102,14 @@
                 android:text="@string/registration"
                 android:textAllCaps="true"
                 android:textColor="@color/black"
-                android:theme="@style/TextH1"
-                app:cornerRadius="8dp" />
+                android:theme="@style/TextH1" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnLoginWithAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="9dp"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
                 android:text="Войти с учетной записью"
                 android:textColor="@color/light_gray"
                 android:theme="@style/TextH2"
