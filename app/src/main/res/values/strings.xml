@@ -17,4 +17,5 @@
     <string name="info_for_create_account">Пожалуйста, введите данные для новой учетной записи</string>
     <string name="name">Имя</string>
     <string name="settings">Settings</string>
+    <string name="new_notes">Новые заметки %1$d</string>
 </resources>

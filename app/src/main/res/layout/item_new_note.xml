@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_shape"
+    android:layout_marginHorizontal="8dp"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civUserAvatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNoteName"
+        style="@style/TextH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Поход к стоматологу"
+        app:layout_constraintStart_toEndOf="@+id/civUserAvatar"
+        app:layout_constraintTop_toTopOf="@+id/civUserAvatar" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/TextH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Понедельник, 12:35"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/tvNoteName"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoteName" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        style="@style/TextH3"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Взять с собой паспорт, мед.полис, СНИЛС, бахилы и маску. Пр. Строителей, 50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/civUserAvatar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsersAvatars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        tools:listitem="@layout/item_avatar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="@+id/tvDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        tools:itemCount="3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

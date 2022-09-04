@@ -42,7 +42,7 @@ class LoginFragment : Fragment() {
         }
 
         binding.tvLoginWithoutAccount.setOnClickListener{
-
+            findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
         }
 
         binding.tvResetPassword.setOnClickListener {
