@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import ru.m0kita.profnotes.databinding.ItemAvatarBinding
-import ru.m0kita.profnotes.ui.home.HomeFragment
 
 class NewNotesAvatarsAdapter(private val usersAvatars: List<String>, private val context: Context) :
     RecyclerView.Adapter<NewNotesAvatarsAdapter.NewNotesAvatarsViewHolder>() {

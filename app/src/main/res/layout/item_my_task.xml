@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shape"
+    android:layout_marginTop="12dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        style="@style/TextH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Новое"
+        tools:textColor="@color/blue" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatus" />
+
+    <View
+        android:id="@+id/viewStatusLine"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        tools:background="@color/light_green"
+        app:layout_constraintBottom_toBottomOf="@id/tvDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tvNameNote"
+        style="@style/TextH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        tools:text="Выполнение дз к понедельнику"
+        app:layout_constraintStart_toEndOf="@+id/viewStatusLine"
+        app:layout_constraintTop_toTopOf="@+id/viewStatusLine" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        style="@style/TextH5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Выучить основные компоненты андроид"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/tvNameNote"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameNote" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_more"
+        app:layout_constraintBottom_toTopOf="@+id/tvDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNameNote"
+        app:tint="@color/gray" />
+
+    <ImageView
+        android:id="@+id/ivSwapStatus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewStatusLine"
+        app:tint="@color/gray" />
+
+    <TextView
+        android:id="@+id/tvSwapStatus"
+        style="@style/TextH5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Cменить статус"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSwapStatus"
+        app:layout_constraintStart_toEndOf="@+id/ivSwapStatus"
+        app:layout_constraintTop_toTopOf="@+id/ivSwapStatus" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSwapStatus"
+        app:layout_constraintStart_toEndOf="@+id/tvSwapStatus"
+        app:layout_constraintTop_toTopOf="@+id/tvSwapStatus">
+
+        <ImageView
+            android:id="@+id/ivTime"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="До 12:00"
+            android:layout_marginStart="6dp"
+            style="@style/TextH5"
+            app:layout_constraintStart_toEndOf="@id/ivTime"
+            app:layout_constraintTop_toTopOf="@id/ivTime"
+            app:layout_constraintBottom_toBottomOf="@id/ivTime"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

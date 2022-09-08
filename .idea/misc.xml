@@ -14,11 +14,19 @@
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/botton_nav_bar_selector.xml" value="0.1385" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/et_cursor.xml" value="0.1385" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/ic_bg_image.xml" value="0.1385" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/ic_more.xml" value="0.2045" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/drawable/ic_plus.xml" value="0.119" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_home.xml" value="0.16" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_new_note.xml" value="0.18" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_note.xml" value="0.21710526315789475" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_registration.xml" value="0.22" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_status.xml" value="0.16" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/fragment_task.xml" value="0.22598684210526315" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/item_avatar.xml" value="0.5" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/item_friend.xml" value="0.22598684210526315" />
+        <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/item_my_task.xml" value="0.2" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/layout/item_new_note.xml" value="0.25" />
         <entry key="..\:/Blackhole/Develop/Projects/ProfNotes/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment"
-    tools:padding="20dp">
+    tools:context=".ui.home.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
@@ -121,6 +120,8 @@
             android:src="@drawable/ic_search" />
 
         <EditText
+            android:id="@+id/etSearchNote"
+            android:textCursorDrawable="@drawable/et_cursor"
             style="@style/TextH3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -128,34 +129,74 @@
             android:background="@drawable/bg_shape"
             android:hint="Поиск по заметкам"
             android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:lines="1"
             android:padding="8dp" />
     </LinearLayout>
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/TextH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/new_notes"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNewNotes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:listitem="@layout/item_new_note" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/TextH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        android:text="Мои задачи %1$d"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvNewNotes" />
 
-        <TextView
-            style="@style/TextH1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/new_notes"
-            android:textAllCaps="true" />
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/TextH4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Все задачи"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvNewNotes"
-            android:layout_marginTop="12dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:listitem="@layout/item_new_note"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_my_task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

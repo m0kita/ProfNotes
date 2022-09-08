@@ -1,14 +1,12 @@
 package ru.m0kita.profnotes.ui.login
 
-import android.graphics.Color.green
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import ru.m0kita.profnotes.R
-import ru.m0kita.profnotes.core.gone
 import ru.m0kita.profnotes.core.spanString
 import ru.m0kita.profnotes.databinding.FragmentLoginBinding
 
@@ -41,7 +39,7 @@ class LoginFragment : Fragment() {
             )
         }
 
-        binding.tvLoginWithoutAccount.setOnClickListener{
+        binding.tvLoginWithoutAccount.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
         }
 
