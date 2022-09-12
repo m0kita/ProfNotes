@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="16dp"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -34,18 +35,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_marginTop="44dp"
+            android:id="@+id/statusNew"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/ivStatusNew"
                 android:layout_width="51dp"
                 android:layout_height="51dp"
                 android:background="@drawable/bg_shape"
@@ -56,34 +63,37 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:layout_marginTop="4dp"
-                android:id="@+id/textView8"
+                android:id="@+id/tvStatusNew"
                 style="@style/TextH2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
                 android:text="Новое"
                 android:textColor="@color/blue"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="@+id/imageView" />
+                app:layout_constraintStart_toEndOf="@+id/ivStatusNew"
+                app:layout_constraintTop_toTopOf="@+id/ivStatusNew" />
 
             <TextView
+                android:id="@+id/tvStatusNewDescription"
                 style="@style/TextH5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Только что созданная задача"
                 android:textColor="@color/gray"
-                app:layout_constraintStart_toStartOf="@+id/textView8"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintStart_toStartOf="@+id/tvStatusNew"
+                app:layout_constraintTop_toBottomOf="@+id/tvStatusNew" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/statusInWork"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/ivStatusInWork"
                 android:layout_width="51dp"
                 android:layout_height="51dp"
                 android:background="@drawable/bg_shape"
@@ -94,35 +104,37 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/tvStatusInWork"
                 style="@style/TextH2"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="4dp"
-                android:layout_height="wrap_content"
                 android:text="В работе"
                 android:textColor="@color/light_green"
-                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toEndOf="@+id/ivStatusInWork"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/tvStatusInWorkDescription"
                 style="@style/TextH5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Активный этап выполнения"
                 android:textColor="@color/gray"
-                app:layout_constraintStart_toStartOf="@+id/textView13"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                app:layout_constraintStart_toStartOf="@+id/tvStatusInWork"
+                app:layout_constraintTop_toBottomOf="@+id/tvStatusInWork" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/statusComplete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/ivStatusComplete"
                 android:layout_width="51dp"
                 android:layout_height="51dp"
                 android:background="@drawable/bg_shape"
@@ -133,35 +145,37 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView11"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="4dp"
+                android:id="@+id/tvStatusComplete"
                 style="@style/TextH2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
                 android:text="Выполнено"
                 android:textColor="@color/yellow"
-                app:layout_constraintStart_toEndOf="@+id/imageView3"
-                app:layout_constraintTop_toTopOf="@+id/imageView3" />
+                app:layout_constraintStart_toEndOf="@+id/ivStatusComplete"
+                app:layout_constraintTop_toTopOf="@+id/ivStatusComplete" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/tvStatusCompleteDescription"
                 style="@style/TextH5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Задача полностью выполнена"
                 android:textColor="@color/gray"
-                app:layout_constraintStart_toStartOf="@+id/textView11"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                app:layout_constraintStart_toStartOf="@+id/tvStatusComplete"
+                app:layout_constraintTop_toBottomOf="@+id/tvStatusComplete" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/statusHoldOver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/ivHoldOver"
                 android:layout_width="51dp"
                 android:layout_height="51dp"
                 android:background="@drawable/bg_shape"
@@ -172,25 +186,26 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="4dp"
-                android:id="@+id/textView9"
+                android:id="@+id/tvStatusHoldOver"
                 style="@style/TextH2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
                 android:text="Отложено"
                 android:textColor="@color/red"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
-                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+                app:layout_constraintStart_toEndOf="@+id/ivHoldOver"
+                app:layout_constraintTop_toTopOf="@+id/ivHoldOver" />
 
             <TextView
+                android:id="@+id/statusHoldOverDescription"
                 style="@style/TextH5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Задача требует задержки в работе"
                 android:textColor="@color/gray"
-                app:layout_constraintStart_toStartOf="@+id/textView9"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintStart_toStartOf="@+id/tvStatusHoldOver"
+                app:layout_constraintTop_toBottomOf="@+id/tvStatusHoldOver" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
@@ -220,18 +235,16 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCancel"
             style="@style/TextH2"
-            app:cornerRadius="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingVertical="8dp"
             android:text="Отменить"
             android:textColor="@color/gray"
+            app:cornerRadius="8dp"
             app:layout_constraintEnd_toEndOf="@+id/btnSwapStatus"
             app:layout_constraintStart_toStartOf="@+id/btnSwapStatus"
             app:layout_constraintTop_toBottomOf="@id/btnSwapStatus" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
